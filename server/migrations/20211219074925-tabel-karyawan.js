@@ -15,7 +15,7 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db, callback) {
-  db.createTable('table_karyawan', {
+  db.createTable('tabel_karyawan', {
     karyawan_id: {
       type: 'int',
       length: 11,
@@ -45,7 +45,7 @@ exports.up = function(db, callback) {
 };
 
 exports.down = function(db, callback) {
-  db.dropTable('table_karyawan', callback)
+  db.dropTable('tabel_karyawan', callback)
 };
 
 exports._meta = {
