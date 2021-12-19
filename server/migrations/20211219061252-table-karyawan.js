@@ -14,7 +14,7 @@ exports.setup = function(options, seedLink) {
   seed = seedLink;
 };
 
-exports.up = function(db) {
+exports.up = function(db, callback) {
   db.createTable('table_karyawan', {
     karyawan_id: {
       type: 'int',
